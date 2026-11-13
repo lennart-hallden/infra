@@ -1,0 +1,38 @@
+# Secrets - never commit
+.env
+.env.*
+*.pem
+*.key
+*.pfx
+*.agekey
+keys.txt
+.vault_pass*
+*.tfvars
+!*.tfvars.example
+
+# Terraform state (contains secrets in plaintext)
+.terraform/
+*.tfstate
+*.tfstate.*
+
+# Vagrant and VM artifacts
+.vagrant/
+*.box
+*.iso
+*.ova
+*.vmdk
+
+# Installers and binaries
+*.exe
+*.msi
+
+# Logs and raw scan output
+*.log
+scan-output/
+
+# OS and editor junk
+Thumbs.db
+desktop.ini
+.DS_Store
+*.swp
+*~
